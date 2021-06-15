@@ -14,7 +14,6 @@ tokens=( $var )
 bus=${tokens[1]}
 device=$(echo ${tokens[3]} |awk '{ print substr( $0, 1, length($0)-1 ) }')
 if [[ -n $bus ]] && [[ -n $device ]]; then
-        #echo $bus $device
         app=$(lsof /dev/bus/usb/$bus/$device)
         if [[ -z $app ]]; then
                 echo "<$f_name>Device is not in use!"
