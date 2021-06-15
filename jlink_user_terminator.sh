@@ -1,10 +1,8 @@
 #!/bin/bash
-#Hunkar Ciplak
+#Author: Hunkar Ciplak, 05.2021
 
 f_name=${0##*/}
 var=$(lsusb | awk '/J-Link/{print $0; exit}')
-
-
 
 if [[ -z $var ]]; then
         echo "<$f_name>J-Link not found!"
