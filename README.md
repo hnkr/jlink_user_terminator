@@ -1,2 +1,2 @@
-# jlink_user_terminator
-Terminates the process using JLink, Start-up Script for Automated Functional Test
+# Segger JLink Hardware Debugger User Program Terminator
+Bash script to terminate the process using JLink.
