@@ -2,8 +2,6 @@
 #Hunkar Ciplak
 
 f_name=${0##*/}
-#rm -rf usb_devlogs.tmp
-#lsusb > usb_devlogs.tmp
 var=$(lsusb | awk '/J-Link/{print $0; exit}')
 
 
